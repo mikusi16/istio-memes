@@ -1,0 +1,24 @@
+name: do-we-have-duplicated-memes
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lets-check-it-out:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Czkawka and Check Duplicates
+        run: |
+          wget https://github.com/qarmin/czkawka/releases/download/7.0.0/linux_czkawka_cli
+          chmod +x linux_czkawka_cli
+          output=$(./linux_czkawka_cli dup --directories images/)
+          if [[ $output == *"Not found any duplicates."* ]]; then
+            echo "No duplicates found."
+          else
+            echo "Error: Duplicates found."
+            exit 1
+          fi
+
