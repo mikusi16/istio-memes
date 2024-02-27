@@ -1,8 +1,8 @@
 # istio-memes
 [![do-we-have-duplicated-memes](https://github.com/mikusi16/istio-memes/actions/workflows/check-duplicate-files.yml/badge.svg)](https://github.com/mikusi16/istio-memes/actions/workflows/check-duplicate-files.yml)
-![does-istio-work](https://img.shields.io/badge/does_istio_work-no-red)
-![do-we-have-deadlines](https://img.shields.io/badge/do_we_have_deadlines-yes-green)
-![is-my-boss-angry](https://img.shields.io/badge/how_is_my_boss-angry-red)
+![does-istio-work](https://img.shields.io/badge/does_istio_work-no-critical)
+![do-we-have-deadlines](https://img.shields.io/badge/do_we_have_deadlines-yes-critical)
+![is-my-boss-angry](https://img.shields.io/badge/how_is_my_boss-angry-critical)
 
 
 Repo for Collecting Istio Memes
