@@ -1,0 +1,42 @@
+name: some-serious-checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lets-check-it-out:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Checking Your Codes
+        run: |
+          sleep 1
+      - name: Installing Kubernetes
+        run: |
+          sleep 1
+      - name: Installing Calico
+        run: |
+          sleep 1
+      - name: Sending Mail to Your Boss
+        run: |
+          sleep 1          
+      - name: Installing Istio
+        run: |
+          sleep 1
+      - name: Deploying Your Codes
+        run: |
+          sleep 1
+      - name: Performing CI Test
+        run: |
+          sleep 1          
+      - name: You Forgot to Turn off GCP, AWS
+        run: |
+          sleep 1          
+      - name: Sending Mail to Your CTO
+        run: |
+          sleep 1
+      - name: You Got Fired
+        run: |
+          exit 1         
